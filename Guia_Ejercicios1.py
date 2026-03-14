@@ -1,30 +1,30 @@
 #Ejercicio 1
-#Rut = input("Ingrese su rut personal(con puntos y guion): ")
-#Nombre = input("Ingrese su nombre y apellido: ")
-#Direccion = input("Ingrese su direccion de casa: ")
-#Correo = input("Ingrese su correo personal: ")
+Rut = input("Ingrese su rut personal(con puntos y guion): ")
+Nombre = input("Ingrese su nombre y apellido: ")
+Direccion = input("Ingrese su direccion de casa: ")
+Correo = input("Ingrese su correo personal: ")
 
-#print("\nDatos personales: ")
-#print("Rut:", Rut)
-#print("Nombre:", Nombre)
-#print("Direccion:", Direccion)
-#print("Correo:", Correo)
+print("\nDatos personales: ")
+print("Rut:", Rut)
+print("Nombre:", Nombre)
+print("Direccion:", Direccion)
+print("Correo:", Correo)
 
 
 #Ejercicio 2
-#num1 = int(input("Ingrese el primer número: "))
-#num2 = int(input("Ingrese el segundo número:"))
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número:"))
 
-#suma = num1 + num2
-#resta = num1 - num2
-#multiplicacion = num1 * num2 
-#division = num1 / num2 
+suma = num1 + num2
+resta = num1 - num2
+multiplicacion = num1 * num2 
+division = num1 / num2 
 
-#print("\nResultados: ")
-#print("Suma:", suma)
-#print("Resta:", resta)
-#print("Multiplicación:", multiplicacion)
-#print("División:", division)
+print("\nResultados: ")
+print("Suma:", suma)
+print("Resta:", resta)
+print("Multiplicación:", multiplicacion)
+print("División:", division)
 
 
 #Ejercicio 3
