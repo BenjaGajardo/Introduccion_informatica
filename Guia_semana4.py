@@ -302,3 +302,4 @@ else:
             print("El resultado de", numero, "elevado a la potencia", potencia, "es:", resultado)
             pregunta = input("Desea calcular nuevamente? (s/n): ")
     print("¡Gracias por usar el programa de cálculo de potencias!")
+
