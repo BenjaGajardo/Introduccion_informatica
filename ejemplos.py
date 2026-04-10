@@ -7,7 +7,7 @@
 #    print(i)
 
 #i = 0
-#for i in range(4, 13, 4):
+#for i in range(10,0,-1):
 #    print(i)
 
 #print("Inicio")
@@ -67,16 +67,16 @@
 #for i in range(10, 0, -1):
 #    print(i)
 
-subtotal = 0
-productos = int(input("Cuantos Productos va a ingresar?: "))
-while productos < 0:
-    print("Error, no se pueden ingresar numeros negativos, intente de nuevo.")
-    productos = int(input("Cuantos Productos va a ingresar?: "))
-for i in range(productos):
-    precio = int(input("Ingrese el precio del producto: "))
-    subtotal += precio
-if subtotal > 50000:
-    descuento = subtotal * 0.1
-    print("El total con descuento es: ", subtotal - descuento)
-else:
-    print("El total a pagar es: ", subtotal)
+#subtotal = 0
+#productos = int(input("Cuantos Productos va a ingresar?: "))
+#while productos < 0:
+#    print("Error, no se pueden ingresar numeros negativos, intente de nuevo.")
+#    productos = int(input("Cuantos Productos va a ingresar?: "))
+#for i in range(productos):
+#    precio = int(input("Ingrese el precio del producto: "))
+#    subtotal += precio
+#if subtotal > 50000:
+#    descuento = subtotal * 0.1
+#    print("El total con descuento es: ", subtotal - descuento)
+#else:
+#    print("El total a pagar es: ", subtotal)

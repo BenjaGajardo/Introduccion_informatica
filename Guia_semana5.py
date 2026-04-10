@@ -170,3 +170,29 @@ while True:
 print("¡Gracias por usar el programa!")
 
 
+ventas_semana = 7
+total_ventas = 0
+i = 1
+mayor_venta = 0
+while i <= ventas_semana:
+    while True:
+        monto_dia = int(input(f"Monto del día {i}: "))
+        if monto_dia >= 0:
+            break
+        else:
+            print("Error: el monto no puede ser negativo.")
+    total_ventas += monto_dia
+    if monto_dia > mayor_venta:
+        mayor_venta = monto_dia
+    i += 1
+promedio_ventas = total_ventas / ventas_semana
+
+
+if total_ventas > 100000:
+    print("\n¡Cuota superada! Felicidades")
+else:
+    print("\nCuota no alcanzada. Sigue esforzándote.")
+print("\nResumen de ventas:")
+print("Total de ventas de la semana:", total_ventas)
+print("Promedio de ventas diarias:", promedio_ventas)
+print("Mayor venta realizada en la semana:", mayor_venta)
