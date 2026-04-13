@@ -98,3 +98,125 @@ print("\nResumen de paneles:")
 print("Total de paneles:", panel_total)
 print("Promedio de paneles:", panel_promedio)
 print("Panel mas alto:", panel_alto)
+
+
+
+numero = int(input("Ingrese un numero: "))
+
+while numero <= 0:
+
+    print("El numero no debe ser 0 ")
+
+    numero = int(input("Ingrese un numero: "))
+
+for i in range(numero):
+
+    print("Hola")
+
+
+
+
+suma_notas = 0
+
+pregunta = int(input("¿Cuantas notas desea promediar?: "))
+
+while pregunta <= 0:
+
+    print("Error debe al menos una nota")
+
+    pregunta = int(input("¿Cuantas notas desea promediar?: "))
+
+for i in range(pregunta):
+
+    nota = int(input("Ingrese la nota: "))
+
+    suma_notas = suma_notas + nota
+
+promedio = suma_notas / pregunta
+
+print("El promedio es: ", promedio)
+
+
+suma_notas = 0
+pregunta = int(input("¿Cuantas notas desea promediar?: "))
+while pregunta <= 0:
+    print("Error debe al menos una nota")
+    pregunta = int(input("¿Cuantas notas desea promediar?: "))
+for i in range(pregunta):
+    nota = int(input("Ingrese la nota: "))
+    suma_notas = suma_notas + pregunta
+promedio = suma_notas / nota
+print("El promedio es: ", promedio)
+
+
+pregunta = int(input("¿Cuantos Paneles tiene el sistema?: "))
+while pregunta <= 0:
+    print("Error el numero no debe ser ni negativo ni cero")
+    pregunta = int(input("¿Cuantos Paneles tiene el sistema?: "))
+total_voltaje = 0
+voltaje_maximo = 0
+for i in range(pregunta):
+    panel = int(input(f"Ingrese el voltaje del panel{i+1}: "))
+    total_voltaje = total_voltaje + panel
+    if voltaje_maximo < panel:
+        voltaje_maximo = panel
+promedio = total_voltaje / pregunta
+print("El promedio es", promedio)
+print("El voltaje maximo es", voltaje_maximo)
+
+
+
+pregunta = int(input("¿cuantas ventas realizaste hoy?: "))
+while pregunta <= 0:
+    print("Error el numero no debe ser negativo ni cero")
+    pregunta = int(input("¿Cuantas ventas realizaste hoy?: "))
+suma_ventas = 0
+venta_mayor = 0
+for i in range(pregunta):
+    venta = int(input(f"Ingrese el valor{i+1}: "))
+    if venta > 50000:
+        print("¡Venta excelente!")
+    if venta_mayor < venta:
+        venta_mayor = venta
+    suma_ventas = suma_ventas + venta
+promedio_ventas = suma_ventas / pregunta 
+if suma_ventas > 100000:
+    print("\nMeta del dia alcanzada")
+else:
+    print("\nMeta no alcanzada")
+print("El promedio es", promedio_ventas)
+print("La venta mayor es", venta_mayor)
+
+
+
+contador = 0
+promedio_nivel = 0
+nivel_alto = 0
+suma_nivel = 0
+pregunta = int(input("¿Cuantas personas intentara ingresar hoy?: "))
+while pregunta <= 0:
+    print("Error el numero debe ser mayor a 0")
+    pregunta = int(input("¿Cuantas personas intentara ingresar hoy?: "))
+for i in range(pregunta):
+    nivel = int(input(f"Ingrese el nivel de acceso (entre un numero del 1 al 7) de la persona {i+1}: "))
+    if nivel >= 7:
+        print("Acceso concedido a area restringida")
+    else:
+        print("Acceso denegado, nivel insuficiente")
+        contador += 1
+    if nivel_alto < nivel:
+        nivel_alto = nivel
+    suma_nivel = suma_nivel + nivel
+promedio = suma_nivel / pregunta
+if contador >= 3:
+    print("\nAlerta de seguridad: Demaciados intentos fallidos")
+else:
+    print("\nTodo normal")
+print("\nLista de respuestas final")
+print("Promedio del nivel de acceso: ", promedio)
+print("Nivel de acceso mas alto: ", nivel_alto)
+print("Total de personas rechazadas: ", contador)
+
+
+
+
